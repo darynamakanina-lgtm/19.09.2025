@@ -1,13 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int sum = 0;
-    for (int i = 1; i <= 5; i++) {
-        sum += i;
-    }
+int sumToN(int n) {
+    int total = 0;
+    for (int i = 1; i <= n; i++) total += i;
+    return total;
+}
 
-    cout << "Sum of numbers 1 to 5: " << sum << endl;
-    cout << "Program finished successfully!" << endl;
+int main() {
+    int n = 10;
+    cout << "Sum of numbers 1 to " << n << ": " << sumToN(n) << endl;
     return 0;
 }
