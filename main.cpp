@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int sumToN(int n) {
+double averageToN(int n) {
     int total = 0;
     for (int i = 1; i <= n; i++) total += i;
-    return total;
+    return (double)total / n;
 }
 
 int main() {
     int n = 10;
-    cout << "Sum of numbers 1 to " << n << ": " << sumToN(n) << endl;
+    cout << "Average of numbers 1 to " << n << ": " << averageToN(n) << endl;
     return 0;
 }
